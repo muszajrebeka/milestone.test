@@ -11,8 +11,12 @@ Tip
 The wrong object may contain the key abacus but with false value! There may only be one object which contains the key as true.
 */
 
-function findAbacus(array) {
-
+function findAbacus(array, n) {
+    for (let i = n; i < array.length; i += n) {
+        console.log (array[i]);
+    }
 }
+
+
 
 module.exports = findAbacus;
